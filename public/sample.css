@@ -1,0 +1,349 @@
+:root {
+    --start: var(--start);
+    --end: var(--end);
+}
+
+body .main {
+    position: relative;
+    background: url(/background_texture.png);
+    width: 50rem;
+    height: 6200px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main .header {
+    width: 100%;
+    height: 6.5rem;
+    background: #F2A317;
+    display: flex;
+    flex-direction: row;
+}
+
+.total-coin .outer {
+    position: relative;
+    width: 130px;
+    height: 55px;
+    left: 50px;
+    top: 22px;
+    background: rgba(255, 255, 255, 0.409);
+    border-radius: 10px;
+    border: 2px solid #FFF;
+}
+
+.outer .inner {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    left: 5px;
+    top: 2.2px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.365);
+    display: flex;
+    flex-direction:row ;
+}
+
+.inner img {
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.inner .coins {
+    position: relative;
+    font-size: 20px;
+    top: 12px;
+    left: 10px;
+    letter-spacing: 0.01em;
+    font-family: "Chivo";
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    width: 44.74px;
+    height: 14.44px;
+}
+
+.header .close-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 580px;
+    border-radius: 50%;
+    background: red;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    font-family: Baloo Thambi;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.364);
+}
+
+.main .para {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+.days .outer-1 {
+    position: relative;
+    width: 160px;
+    height: 70px;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    background: #ffffff7e;
+    left: 450px;
+    margin-bottom: 10px;
+}
+
+.outer-1 .inner-1 {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    left: 5px;
+    top: 5px;
+    border-radius: 10px;
+    background: #FF6B0096;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.414);
+    display: flex;
+    flex-direction: row;
+} 
+ 
+.inner-1 img{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 40px;
+    height: 55px;
+}
+
+.inner-1 .count {
+    position: relative;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    font-family:'Chivo';
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    width: 44.74px;
+    height: 14.44px;
+}
+
+.para h1 {
+    position: relative;
+    left: 20px;
+    color: #FFF;
+    font-family: Kavoon;
+    font-size: 150px;
+    font-weight: 400;
+    letter-spacing: 4.77px;
+    margin: 0px;
+    -webkit-text-stroke: 6px #FF6B00;
+}
+
+.para p {
+    color: #000;
+    font-family: Karma;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.17px;
+    margin: 0px;
+}
+
+.content .pipe-bg {
+    position: relative;
+    width: 3.125rem;
+    height: auto;
+    left: 5rem;
+    background: #96A5E8;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 1;
+}
+
+.content .pipe-bg .pipe {
+    position: relative;
+    width: 1.875rem;
+    height: auto;
+    left: 0.625rem;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pipe .pipe-fill {
+    width: 1.875rem;
+    height: 372.5rem;
+    border-radius: 0px 0px 10px 10px;
+    background: #FF6E6E;
+    animation: fillanimation 10s forwards;
+    transform-origin: top;
+    transform: scaleY(var(--end));
+}
+
+@keyframes fillanimation {
+    from {transform: scaleY(var(--start));}
+    to {transform: scaleY(var(--end));}
+}
+
+.content .circle-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.circle-container .circle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    right: 3px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 20px;
+}
+
+.circle-container .circle-m {
+    position:relative;
+    width: 65px;
+    height: 65px;
+    right: 20.5px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: rgba(255, 255, 255, 0.369);
+    margin-top: 20px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.628);
+}
+
+.circle-m .inner-circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: #FF6E6E;
+    top: 4.5px;
+    left: 4.7px;
+    line-height: 50px;
+    text-align: center;
+    font-family: Luckiest Guy;
+    color: #FFF;
+    font-size: 30px;
+    letter-spacing: 0.4px;
+}
+
+.box-container {
+    position: absolute;
+    top: 0px;
+    
+}
+
+.box {
+    position: relative;
+    width: 650px;
+    height: 300px;
+    left: 30px;
+    top: 520px;
+    border-radius: 20px;
+    background: radial-gradient(rgba(255, 0, 0, 0.4), rgba(255, 107, 0, 1));
+    border: 7px solid rgba(255, 0, 0, 0.40);
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.549);
+    filter: grayscale(1);
+}
+
+.box.active {
+    filter: grayscale(0);
+}
+
+.claim {
+    display: none;
+}
+
+.claim.active {
+    display: block;
+}
+
+.claimbtn {
+    position: absolute;
+    left: 320px;
+    top: -25px;
+    width:160px;
+    height: 55px;
+    background-color: #48FB57;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 38px;
+    letter-spacing: 0.02em;
+    font-family: 'Lilita One';
+    color: white;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    -webkit-text-stroke: 1.5px #000;
+    z-index: 5;
+}
+
+.down-arrow {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    top: 30px;
+    left: 337px;
+    border-left: 63px solid transparent;
+    border-right: 63px solid transparent;  
+    border-top: 63px solid #48FB57;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.Vector {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    stroke-width: 1px;
+    left: 220px;
+    top: -71%;
+    z-index: 0;
+}
+
+.Vector.active {
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.box .reward-box {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    left: 43%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 10px;
+    background: rgba(255, 217, 237, 1);
+    border: 10px solid rgb(64, 0, 64);
+    z-index: 1;
+}
+
+.boximg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-container .seperator {
+    position: relative;
+    width: 800px;
+    height: 20px;
+    top: 650px;
+    background: linear-gradient(180deg, #FF6B00 0%, rgba(255, 149, 24, 0.79) 18.75%, rgba(249, 253, 48, 0.60) 64.06%, rgba(255, 138, 0, 0.61) 100%);
+    box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-bottom: 260px;
+}
